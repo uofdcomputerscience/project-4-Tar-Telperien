@@ -118,7 +118,7 @@ class ViewController: UIViewController, CalendarViewDataSource, CalendarViewDele
     }
     
     func calendar(_ calendar: CalendarView, didScrollToMonth date: Date) {
-        self.calendarView.setDisplayDate(date)
+        let _: Bool = true
     }
     
     func calendar(_ calendar: CalendarView, didDeselectDate date: Date) {
@@ -138,7 +138,7 @@ class ViewController: UIViewController, CalendarViewDataSource, CalendarViewDele
     
     
     func calendar(_ calendar: CalendarView, didLongPressDate date : Date, withEvents events: [CalendarEvent]?) {
-        let vc: DateViewController = DateViewController()
+        var vc: DateViewController = DateViewController()
         let tolkienConverter: TolkienisedDate = TolkienisedDate()
         vc.dateLabel.text = tolkienConverter.dateTransform(date: date)
         present(vc, animated: true, completion: {})
