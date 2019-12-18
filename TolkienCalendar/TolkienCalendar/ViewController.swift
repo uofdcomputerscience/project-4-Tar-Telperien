@@ -19,13 +19,13 @@ class ViewController: UIViewController, CalendarViewDataSource, CalendarViewDele
     @IBOutlet weak var previousMonthButton: UIButton!
     
     @IBOutlet weak var nextMonthButton: UIButton!
-    
+
     override func viewDidLoad() {
-
         super.viewDidLoad()
-
+    }
+        
+    func setupCalendar() {
         let style = CalendarView.Style()
-
 
         style.cellShape                = .bevel(8.0)
         style.cellColorDefault         = UIColor.clear
@@ -38,7 +38,7 @@ class ViewController: UIViewController, CalendarViewDataSource, CalendarViewDele
         style.cellTextColorToday       = UIColor.orange
         style.cellTextColorWeekend     = UIColor(red: 237/255, green: 103/255, blue: 73/255, alpha: 1.0)
         style.cellColorOutOfRange      = UIColor(red: 249/255, green: 226/255, blue: 212/255, alpha: 1.0)
-
+        
         style.headerBackgroundColor    = UIColor.white
         style.weekdaysBackgroundColor  = UIColor.white
         style.firstWeekday             = .sunday
@@ -60,21 +60,18 @@ class ViewController: UIViewController, CalendarViewDataSource, CalendarViewDele
         calendarView.multipleSelectionEnable = false
         calendarView.marksWeekends = true
 
-
         calendarView.backgroundColor = UIColor(red: 252/255, green: 252/255, blue: 252/255, alpha: 1.0)
     }
-    
-    
+        
     override func viewDidAppear(_ animated: Bool) {
-        
+            
         super.viewDidAppear(animated)
-        
+        setupCalendar()
         let today = Date()
-        
+            
         var tomorrowComponents = DateComponents()
         tomorrowComponents.day = 1
-        
-        
+            
         let tomorrow = self.calendarView.calendar.date(byAdding: tomorrowComponents, to: today)!
         self.calendarView.selectDate(tomorrow)
 
@@ -88,8 +85,8 @@ class ViewController: UIViewController, CalendarViewDataSource, CalendarViewDele
             }
         }
         #endif
-        
-        
+            
+            
         self.calendarView.setDisplayDate(today)
     }
 
@@ -150,6 +147,7 @@ class ViewController: UIViewController, CalendarViewDataSource, CalendarViewDele
     func headerString(_ date: Date) -> String? {
         let tolkienDate = TolkienisedDate()
         let returnStr = tolkienDate.dateTransform(date: date)
+        print(returnStr)
         return returnStr
     }
     

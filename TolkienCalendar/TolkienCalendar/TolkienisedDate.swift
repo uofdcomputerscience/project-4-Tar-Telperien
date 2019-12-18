@@ -11,12 +11,15 @@ import Foundation
 
 class TolkienisedDate {
     func dateTransform(date: Date) -> String {
+        var month: String
         let formatter1 = DateFormatter()
         formatter1.dateFormat = "MMMM"
-        var month: String = formatter1.string(from: date)
+        //print(formatter1.string(from: date))
+        month = formatter1.string(from: date)
         
         let formatter2 = DateFormatter()
         formatter2.dateFormat = "d"
+        print(formatter2.string(from: date))
         var day = formatter1.string(from: date)
         
         if (month == "January") {

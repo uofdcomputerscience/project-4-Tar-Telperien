@@ -19,7 +19,7 @@
                                 <rect key="frame" x="20" y="64" width="374" height="758"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="95" translatesAutoresizingMaskIntoConstraints="NO" id="G9v-g3-2RA">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="95" translatesAutoresizingMaskIntoConstraints="NO" id="G9v-g3-2RA">
                                 <rect key="frame" x="66" y="830" width="282" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="It1-2X-i0t">
@@ -43,8 +43,12 @@
                         <constraints>
                             <constraint firstItem="qNa-5i-Id0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9Js-xC-wIz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qNa-5i-Id0" secondAttribute="bottom" constant="40" id="Mfn-1E-01n"/>
+                            <constraint firstItem="G9v-g3-2RA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="aDP-5W-P4r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G9v-g3-2RA" secondAttribute="trailing" constant="66" id="lv3-4S-mSQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qNa-5i-Id0" secondAttribute="trailing" constant="20" id="mZI-xA-D4n"/>
                             <constraint firstItem="qNa-5i-Id0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="qba-jn-i4W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="G9v-g3-2RA" secondAttribute="bottom" constant="2" id="wFf-az-1Zo"/>
+                            <constraint firstItem="G9v-g3-2RA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="786" id="zCK-f1-OdZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
