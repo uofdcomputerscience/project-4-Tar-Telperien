@@ -29,7 +29,7 @@ class DateViewController: UIViewController {
         dateLabel.font = UIFont(name: "Papyrus", size: 40)
         languageSwitchButton.titleLabel?.text = "Tengwar"
         languageSwitchButton.titleLabel?.font = UIFont(name: "TengwarEldamar", size: 35)
-        languageSwitchButton.tintColor = .gray
+        //languageSwitchButton.tintColor = .gray
     }
     
     @IBAction func languageSwitchTapped(_ sender: UIButton) {

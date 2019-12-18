@@ -60,11 +60,11 @@ class TolkienisedDate {
         else if (month == "October") {
             return "Narquelië " + day
         }
-        else if (month == "Novermber") {
+        else if (month == "November") {
             return "Hísimë " + day
         }
         else {
-            if (day == "30"){
+            if (day == "31"){
                 return "Mettarë"
             }
             else {
