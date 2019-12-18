@@ -142,7 +142,8 @@ class ViewController: UIViewController, CalendarViewDataSource, CalendarViewDele
         //print(vc)
         let tolkienConverter: TolkienisedDate = TolkienisedDate()
         //print(tolkienConverter)
-        vc.dateLabel.text = tolkienConverter.dateTransform(date: date)
+        let str = tolkienConverter.dateTransform(date: date)
+        vc.dateLabel.text = str
         present(vc, animated: true)
     }
     
