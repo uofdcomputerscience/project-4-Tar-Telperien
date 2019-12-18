@@ -20,57 +20,57 @@ class TolkienisedDate {
         let formatter2 = DateFormatter()
         formatter2.dateFormat = "d"
         print(formatter2.string(from: date))
-        var day = formatter1.string(from: date)
+        var day = formatter2.string(from: date)
         
         if (month == "January") {
             if (day == "1"){
                 return "Yestarë"
             }
             else {
-                return "Narvinyë" + day
+                return "Narvinyë " + day
             }
         }
         else if (month == "February") {
-            return "Nénimë" + day
+            return "Nénimë " + day
         }
         else if (month == "March") {
-            return "Súlimë" + day
+            return "Súlimë " + day
         }
         else if (month == "April") {
-            return "Víressë" + day
+            return "Víressë " + day
         }
         else if (month == "May") {
-            return "Lótessë" + day
+            return "Lótessë " + day
         }
         else if (month == "June") {
             if (day == "30"){
                 return "Loëndë"
             }
             else {
-                return "Nárië" + day
+                return "Nárië " + day
             }
         }
         else if (month == "July") {
-            return "Cermië" + day
+            return "Cermië " + day
         }
         else if (month == "August") {
-            return "Urimë" + day
+            return "Urimë " + day
         }
         else if (month == "September") {
-            return "Yavannië" + day
+            return "Yavannië " + day
         }
         else if (month == "October") {
-            return "Narquelië" + day
+            return "Narquelië " + day
         }
         else if (month == "Novermber") {
-            return "Hísimë" + day
+            return "Hísimë " + day
         }
         else {
             if (day == "30"){
                 return "Mettarë"
             }
             else {
-                return "Ringarë" + day
+                return "Ringarë " + day
             }
         }
     }

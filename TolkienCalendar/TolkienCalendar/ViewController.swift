@@ -141,13 +141,14 @@ class ViewController: UIViewController, CalendarViewDataSource, CalendarViewDele
         let vc: DateViewController = DateViewController()
         let tolkienConverter: TolkienisedDate = TolkienisedDate()
         vc.dateLabel.text = tolkienConverter.dateTransform(date: date)
+        present(vc, animated: true, completion: {})
     }
     
     
     func headerString(_ date: Date) -> String? {
         let tolkienDate = TolkienisedDate()
         let returnStr = tolkienDate.dateTransform(date: date)
-        print(returnStr)
+        //print(returnStr)
         return returnStr
     }
     
