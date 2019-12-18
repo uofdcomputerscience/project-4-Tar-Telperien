@@ -65,7 +65,7 @@
         <!--Date View Controller-->
         <scene sceneID="Ahp-ga-4NH">
             <objects>
-                <viewController storyboardIdentifier="&quot;DateViewController&quot;" id="iur-3J-Plp" customClass="DateViewController" customModule="TolkienCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DateViewController" id="iur-3J-Plp" customClass="DateViewController" customModule="TolkienCalendar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7FA-zJ-R4H">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

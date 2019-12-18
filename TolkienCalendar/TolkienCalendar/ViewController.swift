@@ -138,10 +138,12 @@ class ViewController: UIViewController, CalendarViewDataSource, CalendarViewDele
     
     
     func calendar(_ calendar: CalendarView, didLongPressDate date : Date, withEvents events: [CalendarEvent]?) {
-        var vc: DateViewController = DateViewController()
+        let vc = storyboard?.instantiateViewController(withIdentifier: "DateViewController") as! DateViewController
+        //print(vc)
         let tolkienConverter: TolkienisedDate = TolkienisedDate()
+        //print(tolkienConverter)
         vc.dateLabel.text = tolkienConverter.dateTransform(date: date)
-        present(vc, animated: true, completion: {})
+        present(vc, animated: true)
     }
     
     
