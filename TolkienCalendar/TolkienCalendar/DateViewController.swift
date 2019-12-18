@@ -29,7 +29,7 @@ class DateViewController: UIViewController {
         dateLabel.font = UIFont(name: "Papyrus", size: 40)
         languageSwitchButton.titleLabel?.text = "Tengwar"
         languageSwitchButton.titleLabel?.font = UIFont(name: "TengwarEldamar", size: 35)
-        languageSwitchButton.titleLabel?.text = "Quenya"
+        languageSwitchButton.tintColor = .gray
     }
     
     @IBAction func languageSwitchTapped(_ sender: UIButton) {
@@ -43,7 +43,7 @@ class DateViewController: UIViewController {
             todayIsLabel.font = UIFont(name: "Papyrus", size: 35)
             dateLabel.font = UIFont(name: "Papyrus", size: 40)
             languageSwitchButton.titleLabel?.font = UIFont(name: "TengwarEldamar", size: 35)
-            languageSwitchButton.titleLabel?.text = "Quenya"
+            languageSwitchButton.titleLabel?.text = "Tengwar"
             quenya = false
         }
         self.view.reloadInputViews()
