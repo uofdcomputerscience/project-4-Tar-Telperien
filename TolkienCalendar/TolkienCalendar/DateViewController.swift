@@ -16,13 +16,18 @@ class DateViewController: UIViewController {
     @IBOutlet weak var languageSwitchButton: UIButton!
     
     var quenya: Bool = false
+    var date: String = "DATE"
+    let todayIs: String = "Today Is: "
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        dateLabel.text = date
+        todayIsLabel.text = todayIs
         todayIsLabel.font = UIFont(name: "Papyrus", size: 35)
         dateLabel.font = UIFont(name: "Papyrus", size: 40)
+        languageSwitchButton.titleLabel?.text = "Tengwar"
         languageSwitchButton.titleLabel?.font = UIFont(name: "TengwarEldamar", size: 35)
         languageSwitchButton.titleLabel?.text = "Quenya"
     }
