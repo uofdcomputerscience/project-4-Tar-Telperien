@@ -12,7 +12,7 @@ import Foundation
 class TolkienisedDate {
     func dateTransform(date: Date) -> String {
         var month: String
-        let formatter1 = DateFormatter()
+        var formatter1 = DateFormatter()
         formatter1.dateFormat = "MMMM"
         //print(formatter1.string(from: date))
         month = formatter1.string(from: date)
